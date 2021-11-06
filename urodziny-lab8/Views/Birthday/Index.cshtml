@@ -1,0 +1,17 @@
+﻿@model BirthdayModel
+
+<form method="POST" asp-action="Calculate">
+    <div class="form-group">
+        <label asp-for="Name">Enter your name</label>
+        <input asp-for="Name" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="BirthDate">Enter your birth date</label>
+        <input type="date" asp-for="BirthDate" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <input type="submit" value="Calculate" />
+    </div>
+</form>
