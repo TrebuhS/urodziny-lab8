@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/trebuh/Documents/coding/wsei/urodziny-lab8/urodziny-lab8/urodziny-lab8.csproj",
+      "projectUniqueName": "/Users/trebuh/Documents/coding/urodziny-lab8/urodziny-lab8/urodziny-lab8.csproj",
       "projectName": "urodziny-lab8",
-      "projectPath": "/Users/trebuh/Documents/coding/wsei/urodziny-lab8/urodziny-lab8/urodziny-lab8.csproj",
+      "projectPath": "/Users/trebuh/Documents/coding/urodziny-lab8/urodziny-lab8/urodziny-lab8.csproj",
       "packagesPath": "/Users/trebuh/.nuget/packages/",
-      "outputPath": "/Users/trebuh/Documents/coding/wsei/urodziny-lab8/urodziny-lab8/obj/",
+      "outputPath": "/Users/trebuh/Documents/coding/urodziny-lab8/urodziny-lab8/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/trebuh/.config/NuGet/NuGet.Config"
