@@ -26,7 +26,7 @@ namespace urodziny_lab8.Controllers
             {
                 Name = birthday.Name,
                 DaysToBirthday = CalculateDaysToBirthday(birthday.BirthDate),
-                IsLeapYear = DateTime.IsLeapYear(DateTime.Today.Year)
+                IsLeapYear = DateTime.IsLeapYear(birthday.BirthDate.Year)
             };
             return View(viewModel);
         }
@@ -34,12 +34,12 @@ namespace urodziny_lab8.Controllers
         private int CalculateDaysToBirthday(DateTime birthdayDate)
         {
             DateTime today = DateTime.Today;
-            DateTime next = new DateTime(today.Year, birthdayDate.Month, birthdayDate.Day);
+            DateTime previous = new DateTime(today.Year, birthdayDate.Month, birthdayDate.Day);
 
-            if (next < today)
-                next = next.AddYears(1);
+            if (previous > today)
+                previous = previous.AddYears(-1);
 
-            return (next - today).Days;
+            return (today - previous).Days;
         }
     }
 }
